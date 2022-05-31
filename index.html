@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div id="main-container">
+        <div class="nav">
+            <h1 class="nav-title">DojoWeather</h1>
+            <ul class="nav-links">
+                <li><a href="#" onclick="weatherReport()">Burbank</a></li>
+                <li><a href="#" class="active-link">Chicago</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+        <div class="top">
+            <div class="san-jose">San Jose</div>
+            <div class="dropdown-menu">
+                <form>
+                    <label for="cars">show temperature in</label>
+                    <select name="slect-temp" id="select-temp">
+                    <option value="volvo">&#176;C</option>
+                    <option value="volvo">&#176;F</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="forecast-main">
+            <div class="col1">
+                <div class="day">Today</div>
+                <div><img class="img" src="assets/some_rain.png" alt="some some rain"></div>
+                <div class="forecst-text">Some Rain</div>
+            <div class="forecast-numbers">
+                <div class="number-red">&#176;24</div>
+                <div class="number-blue">&#176;18</div>
+            </div>
+            </div> 
+            <div class="col2">
+                <div class="day">Tomorrow</div>
+                <div><img class="img" src="assets/some_sun.png" alt="some some rain"></div>
+                <div class="forecst-text">Some Sun</div>
+                <div class="forecast-numbers">
+                    <div class="number-red">&#176;27</div>
+                    <div class="number-blue">&#176;18</div>
+                </div>
+            </div> 
+            <div class="col3">
+                <div class="day">Friday</div>
+                <div><img class="img" src="assets/some_clouds.png" alt="some some rain"></div>
+                <div class="forecst-text">Some clouds</div>
+                <div class="forecast-numbers">
+                    <div class="number-red">&#176;21</div>
+                    <div class="number-blue">&#176;16</div>
+                </div>
+            </div> 
+            <div class="col4">
+                <div class="day">Saturday</div>
+                <div><img class="img" src="assets/some_sun.png" alt="some some rain"></div>
+                <div class="forecst-text">Some Sun</div>
+                <div class="forecast-numbers">
+                    <div class="number-red">&#176;26</div>
+                    <div class="number-blue">&#176;21</div>
+                </div>
+            </div>
+            </div>
+            <div class="cookie-container" onclick="remove(this)">
+                <div class="cookie-inner">
+                <img class="alert-image" src="assets/alert-dark.png" alt="alert-dark">
+                    <p class="stop"><b>Stop! Cookie Time</b><br>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and analyse our traffic. <a href="#">cookie policy</a></p>
+                    <input class="btn-bottom" type="button" value="I Accept">
+                </div>
+            </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
